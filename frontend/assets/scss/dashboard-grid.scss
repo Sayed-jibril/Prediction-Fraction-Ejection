@@ -1,0 +1,35 @@
+.grid-group {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  overflow-y: hidden;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 5px;
+
+  .title {
+    margin-bottom: 25px;
+    font-size: 18.5px;
+    display: flex;
+    align-items: center;
+    color: #242424;
+
+    span {
+      color: #5F94F5;
+      font-size: 13px;
+      margin-right: 9px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .grid-group {
+    flex-direction: column;
+    height: 700px;
+    gap: 5px;
+
+    > div {
+      width: 100%;
+    }
+  }
+}
